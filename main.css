@@ -43,16 +43,29 @@ h1 {
 	align-content:center;
 	align-content:middle;
 }
+
 h2{
-	align-content: middle;
-	align-text:middle;
+	text-align:center;
+	padding-top:10px;
 }
+
 main2 {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr; 
 	vertical-align:middle;
 	gap:10px;
-	padding:30px;
+	padding:10px;
+}
+
+h3 {
+	font-size:18px;
+	padding-left:12px;
+}
+
+p {
+	font-size:12px;
+	padding-left:12px;
+	
 }
 
 img{
@@ -85,11 +98,17 @@ button {
     padding: 00px;
 }
 
+.content-wrapper {
+    border: 2px solid lightgray; 
+    padding: 0px;
+	border-radius: 20px;
+}
+	
 footer {
-    background-color: #333;
+    background-color: #473E48;
     color: #fff;
-    padding: 10px;
-    text-align: right;
+    padding: 15px;
+    text-align: left;
 }
 
 #logoWhite {
