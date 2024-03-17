@@ -115,3 +115,149 @@ footer {
     height: auto;
 	align-content:left;
 }
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #473E48;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-section {
+}
+
+.pet-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .content-wrapper {
+    width: 100%;
+    border: 2px solid lightgray; 
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#adoption-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #473E48;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2E2731;
+}
+
+#zip-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#zip-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#zip-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#zip-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #473E48;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#zip-form button[type="submit"]:hover {
+    background-color: #2E2731;
+}
+
+.shelter {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.shelter h2 {
+    margin-top: 0;
+}
+
+.shelter p {
+    margin-bottom: 0;
+}
+
+.shelter button {
+    margin-top: 10px;
+}
