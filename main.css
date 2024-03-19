@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    color: #473E48;
 }
 header {
     background-color: white;
@@ -23,7 +24,7 @@ nav a {
     color: #473E48;
     text-decoration: none;
     padding: 0 15px;
-	font-size:25px;
+	font-size: 25px;
 }
 nav2 a {
     color: white;
@@ -61,6 +62,11 @@ h3 {
 	font-size:18px;
 	padding-left:12px;
 }
+h6 {
+    text-align: right;
+  font-weight: 500;
+    margin: 10px 10px -35.5px -10px;
+}
 
 p {
 	font-size:14px;
@@ -80,6 +86,11 @@ button {
 	background-color: #473E48;
 	border-radius: 8px;
 	font-weight: bold;
+}
+
+button:hover {
+    background-color: #E9E8EE;
+    color: #473E48;
 }
 
 .column {
@@ -269,7 +280,7 @@ nav a {
     color: #473E48;
     text-decoration: none;
     padding: 0 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 nav a:hover {
