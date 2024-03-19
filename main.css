@@ -1,6 +1,21 @@
+<<<<<<< HEAD
+@font-face {
+    font-family: inter;
+    src: url(font/Inter-Regular.ttf);
+  }
+<<<<<<< Updated upstream
+
+body {
+    margin: 0;
+    font-family: inter;
+=======
+  
+=======
+>>>>>>> d92049b0bd0c1bbfbafaa1fcb1a8b7943e61ba30
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+>>>>>>> Stashed changes
     color: #473E48;
 }
 header {
@@ -41,12 +56,14 @@ main {
 }
 
 h1 {
-	align-content:center;
+	font-size: 64px;
+    align-content:center;
 	align-content:middle;
 }
 
-h2{
-	text-align:center;
+h2 {
+	font-size: 54px;
+    text-align:center;
 	padding-top:10px;
 }
 
@@ -206,7 +223,6 @@ select {
 button[type="submit"] {
     display: block;
     width: 100%;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #473E48;
