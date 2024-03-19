@@ -1,21 +1,15 @@
-<<<<<<< HEAD
 @font-face {
     font-family: inter;
     src: url(font/Inter-Regular.ttf);
   }
-<<<<<<< Updated upstream
 
 body {
     margin: 0;
     font-family: inter;
-=======
-  
-=======
->>>>>>> d92049b0bd0c1bbfbafaa1fcb1a8b7943e61ba30
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
->>>>>>> Stashed changes
     color: #473E48;
 }
 header {
@@ -383,6 +377,4 @@ nav2 a {
 	button {
 	padding: 10px 30px;
 	margin: 0 10px;
-}
-
 }
