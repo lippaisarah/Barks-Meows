@@ -1,0 +1,86 @@
+/* Increase font size for better readability on smaller screens. */
+@media (max-width: 520px) {
+  p {
+    font-size: 16px;
+  }
+
+  /* Change center nav layout to vertical */
+  .local-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .local-navlink {
+    margin: 15px;
+  }
+
+  /* mobile hamburger menu media query */
+  .hplogo {
+    max-width: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu icon */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+  }
+
+  /* Center content for smaller screens. */
+  .verticalLine {
+    border-left: 0px solid;
+    margin-left: 0px;
+  }
+
+  /* Simplify top image grid layout for small screens */
+  .image-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr; /* Set to one column for small screens */
+    gap: 50px;
+    object-position: center;
+  }
+
+  /* resizes image to properly fit vertical stack */
+  .duracell {
+    display: block;
+  }
+
+  /* converts from grid to block to properly fit vertical stack */
+  .media-container {
+    display: block;
+  }
+
+  /* Simplify about me layout for small screens */
+  .aboutmeblock {
+    display: block;
+    text-align: center;
+  }
+
+  /* Move hand placement for small screens */
+  .hand {
+    left: 250px;
+  }
+}
+
+/* Decrease font size on larger screens. */
+@media (max-width: 768px) {
+  .navlink {
+    font-size: 16px;
+  }
+}
