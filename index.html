@@ -7,94 +7,110 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
     <title>Barks and Meows Adoption</title>
-	</head> 
-	
+</head> 
 <body>
-
 <header>
 	<a href="index.html">
-    <img src="images/FullLogo.png" alt="Logo" id="logo">
-    <nav>
-        <a href="pets.html">pets</a>
-         <div class="dropdown">
-            <a href="#">adoption</a>
-            <div class="dropdown-content">
-                <a href="adoption.html">Adoption Form</a>
-                <a href="shelters.html">Shelter Contact</a>
-            </div>
-        </div>
-        <a href="#">resources</a>
-        <a href="contact.html">contact</a>
-    </nav>
+		<img src="images/FullLogo.png" alt="Logo" id="logo">
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="pets.html" class="nav-link">Pets</a>
+				</li>
+				<li class="nav-item">
+					<a href="adoption.html" class="nav-link">Adoption</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Resources</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact</a>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
 	</a>
 </header>
 
 <main>
-    <div class="column">
-	<h1>Find The Right Pet For You</h1>
-	<button class="viewpetcta">View Pets</button>
-    </div>
-    <div class="column">
-		<img src="images/GoldenDogMain.png" alt="DogMain" id="DogMain">
-    </div>
+    <section class="twocol">
+			<div class="empty-container">
+			<h1>Find The Right Pet For You</h1>
+			</div>
+		<button class="viewpetcta">View Pets</button>
+	</section>
+    <section class="twocol">
+		<div class="link-container">
+			<img src="images/GoldenDogMain.png" alt="DogMain" id="DogMain">
+    	</div>
+	</section>
+	<section class="full">
+ 		<h2>Featured Pets</h2>
+	</section>
 </main>
- <h2>Featured Pets</h2>
-<main2>
-    <div class="column">
+<main>
+    <section class="fourcol">
 		<div class="content-wrapper">
-		<img src="images/Purple1of4.png" alt="Dog1of4" id="Dog1of4">
-    	<h6>16 days</h6>
-		<h3>Harry</h3>
-		<p>Dog, Labrador mix <br> 2 years old</p>
+			<img src="images/Purple1of4.png" alt="Dog1of4" id="Dog1of4">
+    			<h6>16 days</h6>
+				<h3>Harry</h3>
+				<p>Dog, Labrador mix <br> 2 years old</p>
 		</div>
-		</div>
-    <div class="column">
+	</section>
+    <section class="fourcol">
 		<div class="content-wrapper">
-		<img src="images/Catblue2of4.png" alt="Cat2of4" id="Cat2of4">
-    	<h6>120 days</h6>
-		<h3>Prince</h3>
-		<p>Cat, long haired <br> 6 years old</p>
+			<img src="images/Catblue2of4.png" alt="Cat2of4" id="Cat2of4">
+    			<h6>120 days</h6>
+				<h3>Prince</h3>
+				<p>Cat, long haired <br> 6 years old</p>
 		</div>
-		</div>
-    <div class="column">
+	</section>
+    <section class="fourcol">
 		<div class="content-wrapper">
 		<img src="images/Dogyellow3of4.png" alt="Dog3of4" id="Dog3of4">
     	<h6>204 days</h6>
 		<h3>Smithy</h3>
 		<p>Dog, Shepherd mix <br> 5 years old</p>
 		</div>
-		</div>
-    <div class="column">
+	</section>
+    <section class="fourcol">
 		<div class="content-wrapper">
 		<img src="images/doglighttblue4of4.png" alt="Dog4of4" id="Dog4of4">
 		<h6>24 days</h6>
 		<h3>Honey</h3>
 		<p>Dog, Corgi <br> 3 years old</p>
 		</div>
-		</div>
-</main2>
+	</section>
+	<br><br>
+</main>
 
 	
 <footer>
-	<main>
-	<div class="column2">
+<main>
+	<section class="footer-col">
 		<img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
 		<p>Department of Animal Services<br>
 		221 N. Figueroa Street, Suite 600,<br>
 		Los Angeles, California 90012<br>
 		(888) 452-7381
 		</p>
+	</section>
+	<section class="footer-col">
+		<div class="link-container">
+			<nav2>
+				<a href="#">Contact</a>
+				<a href="#">Adopt</a>
+				<a href="#">Donate</a>
+				<a href="#">Volunteer</a>
+				<a href="#">Careers</a>
+			</nav2>
 		</div>
-	<div class="column2">
-		<nav2>
-        <a href="#">Contact</a>
-        <a href="#">Adopt</a>
-        <a href="#">Donate</a>
-        <a href="#">Volunteer</a>
-        <a href="#">Careers</a>
-    	</nav2>
-		</div>
-	</main>
+	</section>
+</main>
 </footer>
 </body>
 </html>
