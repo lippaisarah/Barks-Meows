@@ -179,6 +179,7 @@ main {
 
 img{
 	max-width:100%;
+	padding-bottom:25px;
 }
 
 button {
@@ -194,6 +195,21 @@ button {
 button:hover {
     background-color: #E9E8EE;
     color: #473E48;
+}
+
+.zoom { 
+	top:-50px; 
+	left:-35px;
+	display:block; 
+	z-index:999; 
+	cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.8s; 
+-webkit-transition-timing-function: ease; 
+} 
+
+.zoom:hover { 
+	transform: scale(1.1); 
 }
 
 .column {
@@ -215,6 +231,8 @@ button:hover {
     border: 2px solid lightgray; 
     padding: 0px;
 	border-radius: 20px;
+	overflow:hidden;
+	space:relative;
 }
 
 #logoWhite {
@@ -452,6 +470,8 @@ button[type="submit"]:hover {
     .emptyblock{
         height: 100px;
     }
+	img{
+		padding-bottom:15px;
 }
 
 @media (max-width: 480px) {
@@ -472,4 +492,5 @@ button[type="submit"]:hover {
     .emptyblock{
         height: 50px;
     } 
+	}
 }
