@@ -1,94 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-H0PQV2B12Z');
-	</script>
 
-    <meta charset="UTF-8"/>
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H0PQV2B12Z');
+    </script>
+
+    <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
     <title>Barks and Meows Adoption - Contact</title>
 </head>
+
 <body>
-
-<header>
-	<a href="index.html">
-    <img src="images/FullLogo.png" alt="Logo" id="logo">
     <nav>
-        <a href="pets.html">pets</a>
-         <div class="dropdown">
-           <a href="#">adoption</a>
-            <div class="dropdown-content">
-           <a href="adoption.html">Adoption Form</a>
-           <a href="shelters.html">Shelter Contact</a>
-            </div>
+        <a href="index.html">
+            <img src="images/FullLogo.png" alt="Logo" id="logo">
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <a href="#">resources</a>
-        <a href="contact.html">contact</a>
+
+        <div class="nav-links">
+            <a href="pets.html" class="navlink">Pets</a>
+            <a href="adoption.html" class="navlink">Adoption</a>
+            <a href="resources.html" class="navlink">Resources</a>
+            <a href="contact.html" class="navlink">Contact</a>
+        </div>
     </nav>
-	</a>
-</header>
 
-<main>
-    <h1>Contact Us</h1>
-	<br>
-    <p>Field Enforcement (loose animals, animal cruelty, pet licenses, permits, spray and neuter, or other inquiries): Please contact the animal shelter in your area and ask to speak with an officer.</p>
-	<br>
-    <p>If you have any questions that you feel are beyond what the Officers can help you with, please email us at <a href="mailto:info@barksandmeows.com">info@barksandmeows.com</a></p>
-    <br>
-    <h2>Let Us Know How We Are Doing</h2>
-	<br>
-    <p>This form should be used to report compliments, comments or complaints regarding Department operations or employee conduct.</p>
-    <br>
-    <form id="contact-form">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-</main>
-
-<footer>
     <main>
-        <div class="column2">
-            <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
-            <p>Department of Animal Services<br>
-            221 N. Figueroa Street, Suite 600,<br>
-            Los Angeles, California 90012<br>
-            (888) 452-7381
-            </p>
-        </div>
-        <div class="column2">
-            <nav2>
-                <a href="#">Contact</a>
-                <a href="#">Adopt</a>
-                <a href="#">Donate</a>
-                <a href="#">Volunteer</a>
-                <a href="#">Careers</a>
-            </nav2>
-        </div>
+        <h1>Contact Us</h1>
+        <br>
+        <p>Field Enforcement (loose animals, animal cruelty, pet licenses, permits, spray and neuter, or other
+            inquiries): Please contact the animal shelter in your area and ask to speak with an officer.</p>
+        <br>
+        <p>If you have any questions that you feel are beyond what the Officers can help you with, please email us at <a
+                href="mailto:info@barksandmeows.com">info@barksandmeows.com</a></p>
+        <br>
+        <h2>Let Us Know How We Are Doing</h2>
+        <br>
+        <p>This form should be used to report compliments, comments or complaints regarding Department operations or
+            employee conduct.</p>
+        <br>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </main>
-</footer>
-</body> 
+
+    <footer>
+        <main>
+            <div class="column2">
+                <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
+                <p>Department of Animal Services<br>
+                    221 N. Figueroa Street, Suite 600,<br>
+                    Los Angeles, California 90012<br>
+                    (888) 452-7381
+                </p>
+            </div>
+            <div class="column2">
+                <nav2>
+                    <a href="#">Contact</a>
+                    <a href="#">Adopt</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Careers</a>
+                </nav2>
+            </div>
+        </main>
+    </footer>
+</body>
