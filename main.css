@@ -493,4 +493,22 @@ button[type="submit"]:hover {
     } 
 	}
     
+#emergency-page main {
+        display:block;
+        align-content: center;
+        padding-bottom: 8%; 
+}
+
+#bodylanguage-page main {
+    display: block;
+    align-content: center;
+    padding-bottom: 8%; 
+}
+
+#petowner-page main {
+    display: block;
+    align-content: center;
+    padding-bottom: 8%; 
+}
+
 }
