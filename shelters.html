@@ -20,36 +20,45 @@
 </head>
 <body>
 
-<header>
-	<a href="index.html">
-    <img src="images/FullLogo.png" alt="Logo" id="logo">
-    <nav>
-        <a href="pets.html">pets</a>
-         <div class="dropdown">
-         <a href="#">adoption</a>
-         <div class="dropdown-content">
-         <a href="adoption.html">Adoption Form</a>
-         <a href="shelters.html">Shelter Contact</a>
-            </div>
-        </div>
-        <a href="#">resources</a>
-        <a href="contact.html">contact</a>
-    </nav>
-	</a>
-</header>
+    <header>
+        <a href="index.html">
+            <img src="images/FullLogo.png" alt="Logo" id="logo">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="pets.html" class="nav-link">Pets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adoption.html" class="nav-link">Adoption</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.html">resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </a>
+    </header>
 
 <main>
     <h1>Find Shelters Near You</h1>
-	<br>
     <form id="zip-form">
         <label for="zip">Enter your zip code:</label>
         <input type="text" id="zip" name="zip" required> 
         <button type="submit">Find Shelters</button>
     </form>
-
-    <div id="shelter-list">
-        <!-- Shelter information will be displayed here -->
+   
+    <div id="map-wrapper">
+        <img src="images/map.png" alt="Map Image" id="map.png" style="display: none;">
     </div>
+   
 </main>
 
 <footer>
