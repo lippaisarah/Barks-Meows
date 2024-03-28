@@ -133,6 +133,12 @@ h3 {
 	padding-left:12px;
 }
 
+h4 {
+	font-size:32px;
+	padding-left:12px;
+    font-weight: bold;
+}
+
 h6 {
     text-align: right;
 	font-weight: 500;
@@ -157,6 +163,10 @@ main {
 
 .twocol{
     grid-column: span 2;
+}
+
+.threecol{
+    grid-column: span 3;
 }
 
 .fourcol{
@@ -187,6 +197,7 @@ main {
 img{
 	max-width:100%;
 	padding-bottom:25px;
+    border-radius: 16px; 
 }
 
 button {
@@ -256,7 +267,7 @@ button:hover {
 .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ccc;
 }
 
@@ -328,7 +339,7 @@ button[type="submit"] {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #473E48;
     color: white;
     font-weight: bold;
@@ -339,6 +350,8 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #2E2731;
 }
+
+
 
 #zip-form {
     max-width: 400px;
@@ -393,6 +406,18 @@ button[type="submit"]:hover {
 .shelter button {
     margin-top: 10px;
 }
+
+.hidden{
+    display: none;
+  }
+  
+  .w-100{
+    width: 100%;
+  }
+  
+  .mb-10{
+    margin-bottom: 10px;
+  }
 
 @media (max-width: 768px) {
     main{

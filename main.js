@@ -1,6 +1,7 @@
-// hamburger menu
 document.addEventListener("DOMContentLoaded", function() {
-const menu = document.querySelector(".menu");
+
+// hamburger menu
+  const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
@@ -37,3 +38,13 @@ document.getElementById('zip-form').addEventListener('submit', function(event) {
     mapImage.style.opacity = '1'; // Fade in the map image
   }, 100);
 });
+
+//show map
+function toggleImage() {
+  document.querySelector('#map').classList.toggle('hidden'); 
+}
+
+//dropdown
+function toggleContent() {
+  document.querySelector('.hidden').classList.toggle('visible');
+}

@@ -48,16 +48,18 @@
     </header>
 
 <main>
-    <h1>Find Shelters Near You</h1>
-    <form id="zip-form">
-        <label for="zip">Enter your zip code:</label>
-        <input type="text" id="zip" name="zip" required> 
-        <button type="submit">Find Shelters</button>
-    </form>
-   
-    <div id="map-wrapper">
-        <img src="images/map.png" alt="Map Image" id="map.png" style="display: none;">
-    </div>
+    <section class="fourcol">
+        <h4>Find Shelters Near You</h4><br>
+        <form id="zip-form">
+            <label for="zip">Enter your zip code:</label>
+            <input type="text" id="zip" name="zip" required> <br><br>
+            <button onClick="toggleImage()" class="w-100 mb-10">Find Shelters</button>
+        </form>
+    </section>
+    
+    <section class="threecol">
+        <img src="images/map.png" alt="Map Image" id="map" class="hidden w-100"/>
+    </section>
    
 </main>
 
