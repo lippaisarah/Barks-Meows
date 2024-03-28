@@ -47,13 +47,44 @@
     </header>
 
 <main>
-    <div class="search-bar">
-        <input type="text" placeholder="Search for a pet...">
-        <button>Search</button>
-    </div>
+    <section class="full">
+        <img src="images/petspage.png" alt="pet group">
+    </section>
+    <section class="fourcol">
+        <label class="cmcontainer">Cats
+            <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+        </label>
+        <label class="cmcontainer">Dogs
+            <input type="checkbox">
+                <span class="checkmark"></span>
+        </label>
+    </section>
+    <section class="fourcol">
+        <div class="link-container">
+            <select name="dog-names" id="dog-names">
+                <option value="Select Breed">Select Breed</option>
+                <option value="Shephard">Shephard</option>
+                <option value="Husky">Husky</option>
+            </select>
+        </div>
+    </section>
+    <section class="fourcol">
+        <div class="link-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Animal Number">
+            </div>
+        </div>
+    </section>
+    <section class="fourcol">
+        <div class="link-container">
+            <button class="viewpetcta">Search</button>
+        </div>
+    </section>
     <div class="filter-section">
         <!-- Include your filter options here -->
     </div>
+
     <div class="pet-profiles">
         <div class="profile">
             <div class="content-wrapper">
