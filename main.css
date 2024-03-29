@@ -129,19 +129,14 @@ h1 {
 
 h2 {
     font-size: 48px;
-    text-align: center;
-    padding-top: 10px;
 }
 
 h3 {
-    font-size: 18px;
-    padding-left: 12px;
-    font-size: 48px;
-    text-align: center;
+    font-size: 32px;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -153,12 +148,6 @@ h6 {
 
 p {
     font-size: 14px;
-    padding-left: 12px;
-}
-
-p2 {
-    font-size: 14px;
-    font-weight: bold
 }
 
 main {
@@ -170,22 +159,62 @@ main {
 
 .full {
     grid-column: 1 / -1;
+    padding-bottom: 16px;
 }
 
 .twocol {
     grid-column: span 2;
+    padding-bottom: 16px;
 }
 
 .threecol {
     grid-column: span 3;
+    padding-bottom: 16px;
 }
 
 .fourcol {
     grid-column: span 1;
+    padding-bottom: 16px;
 }
 
 .footer-col {
     grid-column: span 2;
+}
+
+.footer h1 {
+    font-size: 64px;
+    align-content: center;
+    align-content: middle;
+    padding-left: 12px;
+}
+
+.footer h2 {
+    font-size: 48px;
+    padding-left: 12px;
+    
+}
+
+.footer h3 {
+    font-size: 32px;
+    padding-left: 12px;
+}
+
+.footer h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.footer h6 {
+    text-align: right;
+    font-weight: 500;
+    margin: 10px 10px -35.5px -10px;
+    padding-left: 12px;
+}
+
+.footer p {
+    font-size: 14px;
+    padding-left: 12px;
 }
 
 .link-container {
@@ -267,11 +296,50 @@ button:hover {
     border-radius: 26px;
     overflow: hidden;
     space: relative;
+    padding-bottom: 16px;
 }
 
 .content-wrapper img {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    max-width: 100%;
 }
+
+.content-wrapper h1 {
+    font-size: 64px;
+    align-content: center;
+    align-content: middle;
+    padding-left: 12px;
+}
+
+.content-wrapper h2 {
+    font-size: 48px;
+    padding-left: 12px;
+}
+
+.content-wrapper h3 {
+    font-size: 32px;
+    padding-left: 12px;
+}
+
+.content-wrapper h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.content-wrapper h6 {
+    text-align: right;
+    font-weight: 500;
+    margin: 10px 10px -35.5px -10px;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+.content-wrapper p {
+    font-size: 14px;
+    padding-left: 12px;
+}
+
 
 #logoWhite {
     width: 300px;
@@ -301,12 +369,6 @@ button:hover {
 }
 
 .filter-section {}
-
-.pet-profiles {
-    display: grid;
-    grid-template-columns: repeat(3, fr);
-    gap: 20px;
-}
 
 .profile {
     display: flex;
@@ -357,21 +419,21 @@ button:hover {
 }
 
 .profile h3 {
-    font-size: 18px;
+    font-size: 32px;
     padding-left: 12px;
 }
 
 .profile h4 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     padding-left: 12px;
 }
 
 .profile h6 {
     text-align: right;
-    font-weight: 500;
     margin: 10px 10px -35.5px -10px;
     padding-left: 12px;
+    font-size: 16px;
 }
 
 .profile p {
@@ -381,7 +443,7 @@ button:hover {
 
 #adoption-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .form-group {
