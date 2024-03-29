@@ -39,20 +39,20 @@
             <a href="contact.html" class="navlink">Contact</a>
         </div>
     </nav>
-
-    <main>
-        <h1>Find Shelters Near You</h1>
-        <br>
+<main>
+    <section class="fourcol">
+        <h4>Find Shelters Near You</h4><br>
         <form id="zip-form">
             <label for="zip">Enter your zip code:</label>
-            <input type="text" id="zip" name="zip" required>
-            <button type="submit">Find Shelters</button>
+            <input type="text" id="zip" name="zip" required> <br><br>
+            <button onClick="toggleImage()" class="w-100 mb-10">Find Shelters</button>
         </form>
-
-        <div id="shelter-list">
-            <!-- Shelter information will be displayed here -->
-        </div>
-    </main>
+    </section>
+    
+    <section class="threecol">
+        <img src="images/map.png" alt="Map Image" id="map" class="hidden w-100"/>
+    </section>
+</main>
 
     <footer>
         <main>

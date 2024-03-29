@@ -70,3 +70,15 @@ function displayShelters(shelters) {
 function fillAdoptionForm(shelterId) {
     // Implement functionality to fill adoption form for the selected shelter
 }
+
+});
+
+//show map
+function toggleImage() {
+  document.querySelector('#map').classList.toggle('hidden'); 
+}
+
+//dropdown
+function toggleContent() {
+  document.querySelector('.hidden').classList.toggle('visible');
+}
