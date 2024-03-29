@@ -70,10 +70,6 @@ li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 .hamburger {
     display: none;
 }
@@ -125,17 +121,14 @@ h1 {
 h2 {
 	font-size: 48px;
     text-align:center;
-	padding-top:10px;
 }
 
 h3 {
 	font-size:18px;
-	padding-left:12px;
 }
 
 h4 {
 	font-size:32px;
-	padding-left:12px;
     font-weight: bold;
 }
 
@@ -147,7 +140,11 @@ h6 {
 
 p {
 	font-size:14px;
-	padding-left:12px;
+}
+
+p2 {
+	font-size:14px;
+    font-weight:bold
 }
 
 main {
@@ -194,10 +191,14 @@ main {
     align-content: center;
 }
 
-img{
+.img{
 	max-width:100%;
-	padding-bottom:25px;
-    border-radius: 16px; 
+    border-radius: 24px;
+}
+
+.cover img{
+	max-width:100%;
+    border-radius: 24px;
 }
 
 button {
@@ -216,18 +217,18 @@ button:hover {
 }
 
 .zoom { 
-	top:-50px; 
-	left:-35px;
+	top:-12px; 
+	left:-24px;
 	display:block; 
 	z-index:999; 
 	cursor: pointer; 
 -webkit-transition-property: all; 
--webkit-transition-duration: 0.8s; 
+-webkit-transition-duration: 0.2s; 
 -webkit-transition-timing-function: ease; 
 } 
 
 .zoom:hover { 
-	transform: scale(1.1); 
+	transform: scale(1.03); 
 }
 
 .column {
@@ -248,9 +249,12 @@ button:hover {
 .content-wrapper {
     border: 2px solid lightgray; 
     padding: 0px;
-	border-radius: 20px;
+	border-radius: 26px;
 	overflow:hidden;
 	space:relative;
+}
+.content-wrapper img{
+    margin-bottom: 32px;
 }
 
 #logoWhite {
@@ -282,30 +286,58 @@ button:hover {
 
 .filter-section {
 }
-
-.pet-profiles {
-    display: grid;
-    grid-template-columns: repeat(3, fr);
-    gap: 20px;
-}
-
 .profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile .content-wrapper {
-    width: 100%;
     border: 2px solid lightgray; 
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative; /* Use position relative */
 }
 
 .profile img {
-    max-width: 100%;
-    border-radius: 10px;
+    display: block; /* Ensure image is block-level */
+    max-width: 100%; /* Ensure image doesn't overflow the container */
+    margin-bottom: 32px; /* Add margin at the bottom to create space */
+}
+
+.profile a{
+    text-decoration: none;
+    color:#2E2731;
+}
+
+.profile h1 {
+	font-size: 64px;
+    align-content:center;
+	align-content:middle;
+    padding-left: 12px;
+}
+
+.profile h2 {
+	font-size: 48px;
+    text-align:center;
+    padding-left: 12px;
+}
+
+.profile h3 {
+	font-size:18px;
+    padding-left: 12px;
+}
+
+.profile h4 {
+	font-size:32px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.profile h6 {
+    text-align: right;
+	font-weight: 500;
+    margin: 10px 10px -35.5px -10px;
+    padding-left: 12px;
+}
+
+.profile p {
+	font-size:14px;
+    padding-left: 12px;
 }
 
 #adoption-form {
@@ -419,6 +451,75 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
   }
 
+/* The container */
+.cmcontainer {
+    display: inline-block; /* Change from block to inline-block */
+    position: relative;
+    padding-left: 44px;
+    margin-right: 20px; /* Add margin between checkboxes */
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default checkbox */
+  .cmcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .cmcontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .cmcontainer input:checked ~ .checkmark {
+    background-color: #101010;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .cmcontainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .cmcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
 @media (max-width: 768px) {
     main{
         display:grid;
@@ -438,7 +539,6 @@ button[type="submit"]:hover {
     #logo {
 		min-width:200px;
 	}
-
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -452,16 +552,13 @@ button[type="submit"]:hover {
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
     .nav-menu.active {
         left: 0;
         z-index: 2;
     }
-
     .nav-item {
         margin: 8px;
     }
-
     .hamburger {
         display: block;
         cursor: pointer;
@@ -469,11 +566,9 @@ button[type="submit"]:hover {
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -486,23 +581,24 @@ button[type="submit"]:hover {
 	h3{
 		font-size: 15px;	
 	}
-	
 	p{
 		font-size: 12px;	
 	}
 	h6 {
 		display:none;
 	}
-
 	div.content-wrapper {
 		padding:0;
 	}
-
     .emptyblock{
         height: 100px;
     }
 	img{
 		padding-bottom:15px;
+    }
+    .threecol{
+        grid-column: 1 / -1;
+    }
 }
 
 @media (max-width: 480px) {
