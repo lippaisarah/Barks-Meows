@@ -1,247 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-H0PQV2B12Z');
-	</script>
 
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H0PQV2B12Z');
+    </script>
+
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
     <title>Pets</title>
 </head>
-<body>
 
-    <header>
+<body>
+    <nav>
         <a href="index.html">
             <img src="images/FullLogo.png" alt="Logo" id="logo">
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="pets.html" class="nav-link">Pets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="adoption.html" class="nav-link">Adoption</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="resources.html" class="nav-link">Resources</a>                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
         </a>
-    </header>
 
-<main>
-    <section class="full">
-        <img src="images/petcover.jpg" alt="pet group" class="cover img"><br><br>
-    </section>
-    <section class="fourcol">
-        <label class="cmcontainer">Cats
-            <input type="checkbox">
-                <span class="checkmark"></span>
-        </label>
-        <label class="cmcontainer">Dogs
-            <input type="checkbox">
-                <span class="checkmark"></span>
-        </label>
-    </section>
-    <section class="fourcol">
-        <div class="link-container">
-            <select name="dog-names" id="dog-names">
-                <option value="Select Breed">Select Breed</option>
-                <option value="Shephard">Shephard</option>
-                <option value="Bulldog">Bulldog</option>
-                <option value="Labrador">Labrador</option>
-                <option value="Golden Retriever">Golden Retriever</option>
-                <option value="Poodle">Poodle</option>
-                <option value="Beagle">Beagle</option>
-                <option value="Dachshund">Dachshund</option>
-                <option value="Chow Chow">Chow Chow</option>
-            </select>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container">
-            <div class="search-bar">
-                <input type="text" placeholder="Search Animal Number">
-            </div>
+
+        <div class="nav-links">
+            <a href="pets.html" class="navlink">Pets</a>
+            <a href="adoption.html" class="navlink">Adoption</a>
+            <a href="resources.html" class="navlink">Resources</a>
+            <a href="contact.html" class="navlink">Contact</a>
         </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container">
-            <button class="viewpetcta">Apply Filter</button>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="profile">
-            <img src="images/profile/pet01.jpg" alt="pet01" id="pet01">
-                <h6>162 days</h6>
-                <h3>Henry</h3>
-                <p>Dog, Labrador mix <br> 2 years old</p><br>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet02.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet03.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container">
-            <div class="profile">
-                <a href="profile.html">
-                <img src="images/profile/pet22.png" alt="pet01" id="pet01">
-                <h6>20 days</h6>
-                <h3>Max</h3>
-                <p>Dog, Pitbull Mix <br> 2 years old</p><br>
-            </a>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="profile">
-            <img src="images/profile/pet05.jpg" alt="pet01" id="pet01">
-                <h6>162 days</h6>
-                <h3>Henry</h3>
-                <p>Dog, Labrador mix <br> 2 years old</p><br>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet06.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet07.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet08.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="profile">
-            <img src="images/profile/pet09.jpg" alt="pet01" id="pet01">
-                <h6>162 days</h6>
-                <h3>Henry</h3>
-                <p>Dog, Labrador mix <br> 2 years old</p><br>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet10.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet11.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet12.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="profile">
-            <img src="images/profile/pet13.jpg" alt="pet01" id="pet01">
-                <h6>162 days</h6>
-                <h3>Henry</h3>
-                <p>Dog, Labrador mix <br> 2 years old</p><br>
-        </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet14.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet15.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-    <section class="fourcol">
-        <div class="link-container"></div>
-            <div class="profile">
-                <img src="images/profile/pet16.jpg" alt="pet01" id="pet01">
-                    <h6>days</h6>
-                    <h3>name</h3>
-                    <p>Dog, breed <br> age</p><br>
-            </div>
-    </section>
-</main>
-<footer>
+    </nav>
+
     <main>
-        <section class="footer-col">
-            <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
-            <p>Department of Animal Services<br>
-            221 N. Figueroa Street, Suite 600,<br>
-            Los Angeles, California 90012<br>
-            (888) 452-7381
-            </p>
-        </section>
-        <section class="footer-col">
-            <div class="link-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a pet...">
+            <button>Search</button>
+        </div>
+        <div class="filter-section">
+            <!-- Include your filter options here -->
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+        <div class="pet-profiles">
+            <div class="profile">
+                <div class="content-wrapper">
+                    <img src="images/placeholder1.png" alt="Pet 1">
+                    <h3>Pet Name</h3>
+                    <p>Breed, Age</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <main>
+            <div class="column2">
+                <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
+                <p>Department of Animal Services<br>
+                    221 N. Figueroa Street, Suite 600,<br>
+                    Los Angeles, California 90012<br>
+                    (888) 452-7381
+                </p>
+            </div>
+            <div class="column2">
                 <nav2>
                     <a href="#">Contact</a>
                     <a href="#">Adopt</a>
@@ -250,8 +141,9 @@
                     <a href="#">Careers</a>
                 </nav2>
             </div>
-        </section>
-    </main>
+        </main>
     </footer>
-    </body>
-    </html>
+
+</body>
+
+</html>

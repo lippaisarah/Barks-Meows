@@ -1,80 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-H0PQV2B12Z');
-	</script>
 
-    <meta charset="UTF-8"/>
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PQV2B12Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H0PQV2B12Z');
+    </script>
+
+    <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
     <title>Barks and Meows Adoption - Find Shelters</title>
 </head>
-<body>
 
-    <header>
+<body>
+    <nav>
         <a href="index.html">
             <img src="images/FullLogo.png" alt="Logo" id="logo">
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="pets.html" class="nav-link">Pets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="adoption.html" class="nav-link">Adoption</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="resources.html" class="nav-link">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
         </a>
-    </header>
 
-<main>
-    <section class="fourcol">
-        <h4>Find Shelters Near You</h4><br>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="pets.html" class="navlink">Pets</a>
+            <a href="adoption.html" class="navlink">Adoption</a>
+            <a href="resources.html" class="navlink">Resources</a>
+            <a href="contact.html" class="navlink">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Find Shelters Near You</h1>
+        <br>
         <form id="zip-form">
             <label for="zip">Enter your zip code:</label>
-            <input type="text" id="zip" name="zip" required> <br><br>
-            <button onClick="toggleImage()" class="w-100 mb-10">Find Shelters</button>
+            <input type="text" id="zip" name="zip" required>
+            <button type="submit">Find Shelters</button>
         </form>
-    </section>
-    
-    <section class="threecol">
-        <img src="images/map.png" alt="Map Image" id="map" class="hidden w-100"/>
-    </section>
-   
-</main>
 
-<footer>
-    <main>
-        <section class="footer-col">
-            <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
-            <p>Department of Animal Services<br>
-            221 N. Figueroa Street, Suite 600,<br>
-            Los Angeles, California 90012<br>
-            (888) 452-7381
-            </p>
-        </section>
-        <section class="footer-col">
-            <div class="link-container">
+        <div id="shelter-list">
+            <!-- Shelter information will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <main>
+            <div class="column2">
+                <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
+                <p>Department of Animal Services<br>
+                    221 N. Figueroa Street, Suite 600,<br>
+                    Los Angeles, California 90012<br>
+                    (888) 452-7381
+                </p>
+            </div>
+            <div class="column2">
                 <nav2>
                     <a href="#">Contact</a>
                     <a href="#">Adopt</a>
@@ -83,8 +73,9 @@
                     <a href="#">Careers</a>
                 </nav2>
             </div>
-        </section>
-    </main>
+        </main>
     </footer>
-    </body>
-    </html>
+
+</body>
+
+</html>
