@@ -70,7 +70,7 @@ function fillAdoptionForm(shelterId) {
     // Implement functionality to fill adoption form for the selected shelter
 }
 
-//show map
+//show hide
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
@@ -79,12 +79,6 @@ function myFunction() {
       x.style.display = "none";
     }
   }
-
-//show hide text
-$(document).ready(function(){
-    $("#show").click(function() {
-        $(".hidden").show();
-    });
 
 //dropdown
 function toggleContent() {

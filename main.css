@@ -153,8 +153,8 @@ p {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 8px 20px 8px 20px;
-    grid-gap: 8px;
+    margin: 8px 48px 8px 48px;
+    grid-column-gap: 20px; /* Horizontal gap */
 }
 
 .full {
@@ -240,18 +240,21 @@ main {
 }
 
 button {
-    display: inline-block;
     padding: 10px 50px;
     text-decoration: none;
     color: white;
     background-color: #473E48;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: bold;
+    box-shadow: none;
+    outline: none;
+    text-align: left; /* Use text-align to align button content to the left */
 }
 
 button:hover {
     background-color: #E9E8EE;
     color: #473E48;
+    border: none;
 }
 
 .zoom {
@@ -454,7 +457,6 @@ button[type="submit"] {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
