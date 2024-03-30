@@ -122,7 +122,7 @@ footer {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 60px;
     align-content: center;
     align-content: middle;
 }
@@ -156,6 +156,12 @@ main {
     margin: 8px 48px 8px 48px;
     grid-column-gap: 20px; /* Horizontal gap */
 }
+
+.empty-container{
+		display:flex;
+		justify-content:center;
+		align-content:center;
+	}
 
 .full {
     grid-column: 1 / -1;
