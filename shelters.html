@@ -22,34 +22,36 @@
 
 <body>
     <nav>
-        <a href="index.html">
-            <img src="images/FullLogo.png" alt="Logo" id="logo">
-        </a>
+		<a href="index.html">
+			<img src="images/FullLogo.png" alt="Logo" id="logo">
+		</a>
 
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+		<div class="menu-toggle" id="mobile-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
 
-        <div class="nav-links">
-            <a href="pets.html" class="navlink">Pets</a>
-            <a href="adoption.html" class="navlink">Adoption</a>
-            <a href="resources.html" class="navlink">Resources</a>
-            <a href="contact.html" class="navlink">Contact</a>
-        </div>
-    </nav>
+		<div class="nav-links">
+			<a href="pets.html" class="navlink">Pets</a>
+            <a href="shelters.html" class="navlink">Shelters</a>
+			<a href="adoption.html" class="navlink">Adoption</a>
+			<a href="resources.html" class="navlink">Resources</a>
+			<a href="contact.html" class="navlink">Contact</a>
+		</div>
+	</nav>
 <main>
     <section class="fourcol">
         <h4>Find Shelters Near You</h4><br>
         <form id="zip-form">
-            <label for="zip">Enter your zip code:</label>
             <input type="text" id="zip" name="zip" required> <br><br>
-            <button onclick="toggleImage()">Find Shelters</button>
+            <button onclick="myFunction()">Find Shelters</button>
         </form>
-    </section>
+    </section>  
     <section class="threecol">
-        <img src="images/map.png" alt="Map Image" id="map" class="hidden w-100"/>
+        <div id="myDIV">
+            <img src="images/map.png" alt="Map Image" class="cover img">
+        </div>
     </section>
 </main>
 

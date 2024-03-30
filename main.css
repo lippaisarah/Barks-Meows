@@ -79,7 +79,7 @@ a {
 }
 
 .dropdown-content a {
-    color: black;
+    color:#2E2731;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -228,13 +228,8 @@ main {
     align-items: center;
 }
 
-.emptyblock {
-    visibility: hidden;
-    height: auto;
-    align-content: center;
-}
-
 .img {
+    display: block;
     max-width: 100%;
     border-radius: 24px;
 }
@@ -271,23 +266,7 @@ button:hover {
 }
 
 .zoom:hover {
-    transform: scale(1.03);
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-}
-
-.column2 {
-    display: wrap;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    padding: 00px;
+    transform: scale(1.02);
 }
 
 .content-wrapper {
@@ -367,8 +346,6 @@ button:hover {
     color: white;
     cursor: pointer;
 }
-
-.filter-section {}
 
 .profile {
     display: flex;
@@ -484,8 +461,6 @@ button[type="submit"]:hover {
     background-color: #2E2731;
 }
 
-
-
 #zip-form {
     max-width: 400px;
     margin: 0 auto;
@@ -521,36 +496,10 @@ button[type="submit"]:hover {
     background-color: #2E2731;
 }
 
-.shelter {
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.shelter h2 {
-    margin-top: 0;
-}
-
-.shelter p {
-    margin-bottom: 0;
-}
-
-.shelter button {
-    margin-top: 10px;
-}
-
-.hidden {
+#myDIV {
+    background-color:#fff;
     display: none;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.mb-10 {
-    margin-bottom: 10px;
-}
+  }
 
 /* The container */
 .cmcontainer {

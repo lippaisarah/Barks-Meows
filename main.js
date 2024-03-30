@@ -1,4 +1,3 @@
-
 // mobile menu appears
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("mobile-menu");
@@ -71,14 +70,25 @@ function fillAdoptionForm(shelterId) {
     // Implement functionality to fill adoption form for the selected shelter
 }
 
-});
-
 //show map
-function toggleImage() {
-  document.querySelector('#map').classList.toggle('hidden'); 
-}
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+//show hide text
+$(document).ready(function(){
+    $("#show").click(function() {
+        $(".hidden").show();
+    });
 
 //dropdown
 function toggleContent() {
   document.querySelector('.hidden').classList.toggle('visible');
 }
+
+});
