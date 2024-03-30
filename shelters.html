@@ -45,26 +45,26 @@
         <form id="zip-form">
             <label for="zip">Enter your zip code:</label>
             <input type="text" id="zip" name="zip" required> <br><br>
-            <button onClick="toggleImage()" class="w-100 mb-10">Find Shelters</button>
+            <button onclick="toggleImage()">Find Shelters</button>
         </form>
     </section>
-    
     <section class="threecol">
         <img src="images/map.png" alt="Map Image" id="map" class="hidden w-100"/>
     </section>
 </main>
 
-    <footer>
-        <main>
-            <div class="column2">
-                <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
-                <p>Department of Animal Services<br>
-                    221 N. Figueroa Street, Suite 600,<br>
-                    Los Angeles, California 90012<br>
-                    (888) 452-7381
-                </p>
-            </div>
-            <div class="column2">
+<footer>
+    <main>
+        <section class="footer-col">
+            <img src="images/FullLogoFooter.png" alt="LogoWhite" id="logoWhite">
+            <p>Department of Animal Services<br>
+                221 N. Figueroa Street, Suite 600,<br>
+                Los Angeles, California 90012<br>
+                (888) 452-7381
+            </p>
+        </section>
+        <section class="footer-col">
+            <div class="link-container">
                 <nav2>
                     <a href="#">Contact</a>
                     <a href="#">Adopt</a>
@@ -73,9 +73,8 @@
                     <a href="#">Careers</a>
                 </nav2>
             </div>
-        </main>
+        </section>
+    </main>
     </footer>
-
 </body>
-
 </html>
