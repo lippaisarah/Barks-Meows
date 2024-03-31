@@ -66,6 +66,7 @@ a {
     color: #2E2731;
 }
 
+
 .dropdown {
     position: relative;
 }
@@ -103,16 +104,6 @@ li {
     display: none;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
 footer {
     background-color: #473E48;
     color: #E9E8EE;
@@ -125,6 +116,7 @@ h1 {
     font-size: 60px;
     align-content: center;
     align-content: middle;
+    padding-bottom: 40px;
 }
 
 h2 {
@@ -587,6 +579,39 @@ button[type="submit"]:hover {
         overflow-x: hidden;
     }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+        /* Show the hamburger menu icon */
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+    }
+
+    .bar {
+        display: block;
+        width: 50px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+
     section {
         margin: 16px;
     }
@@ -625,6 +650,7 @@ button[type="submit"]:hover {
     .nav-item {
         margin: 8px;
     }
+
 
     .hamburger {
         display: block;
@@ -681,6 +707,17 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 480px) {
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -744,6 +781,4 @@ button[type="submit"]:hover {
     display: block;
     align-content: center;
     padding-bottom: 8%;
-}
-
 }
