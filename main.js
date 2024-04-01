@@ -86,6 +86,7 @@ function toggleContent() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  
   // image carousel 
   const carouselTrack = document.getElementsByClassName("carousel-track")[0]
   console.log(carouselTrack)
@@ -108,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to automatically rotate images
   const autoRotate = () => {
     nextImage();
-    setTimeout(autoRotate, 5000); // Change 3000 to adjust rotation interval (in milliseconds)
+    setTimeout(autoRotate, 4000); // Change 3000 to adjust rotation interval (in milliseconds)
   }
 
   // Start automatic rotation on window load
