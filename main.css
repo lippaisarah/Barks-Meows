@@ -128,7 +128,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -570,6 +570,23 @@ button[type="submit"]:hover {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+/* image carousel on pets page */
+.carousel-container {
+    width: auto;
+    margin: 100 auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: auto;}
 
 @media (max-width: 768px) {
     main {
