@@ -709,9 +709,17 @@ button[type="submit"]:hover {
     h6 {
         display: none;
     }
+    .content-wrapper {
+        padding-bottom: 16px;
+    }
 
-    div.content-wrapper {
-        padding: 0;
+    .content-wrapper img{
+        padding-bottom: 0px;
+    }
+
+    .content-wrapper h6 {
+        margin: 0px;
+        padding-left: 12px;
     }
 
     .emptyblock {
@@ -724,6 +732,18 @@ button[type="submit"]:hover {
 
     .threecol {
         grid-column: 1 / -1;
+    }
+
+    .cmcontainer {
+        padding-left: 44px;
+        margin-right: 20px;
+        padding-bottom: 8px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+        margin: 24px;
     }
 }
 
@@ -757,6 +777,7 @@ button[type="submit"]:hover {
         display: grid;
         grid-template-columns: 1fr;
         overflow-x: hidden;
+        margin: 16px;
     }
 
     .fourcol {
