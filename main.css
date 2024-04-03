@@ -751,7 +751,7 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 480px) {
-
+	
     .bar {
         display: block;
         width: 25px;
