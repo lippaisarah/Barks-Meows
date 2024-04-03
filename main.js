@@ -7,33 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function displayShelters(shelters) {
-  var shelterList = document.getElementById('shelter-list');
-  shelterList.innerHTML = ''; // Clear previous results
 
-  shelters.forEach(function (shelter) {
-    var shelterDiv = document.createElement('div');
-    shelterDiv.classList.add('shelter');
-
-    var shelterName = document.createElement('h2');
-    shelterName.textContent = shelter.tags.name || 'Unnamed Shelter';
-
-    var shelterAddress = document.createElement('p');
-    shelterAddress.textContent = shelter.tags.addr_street || '';
-
-    var adoptionFormButton = document.createElement('button');
-    adoptionFormButton.textContent = 'Fill Adoption Form';
-    adoptionFormButton.addEventListener('click', function () {
-      fillAdoptionForm(shelter.id);
-    });
-
-    shelterDiv.appendChild(shelterName);
-    shelterDiv.appendChild(shelterAddress);
-    shelterDiv.appendChild(adoptionFormButton);
-
-    shelterList.appendChild(shelterDiv);
-  });
-}
 
 function fillAdoptionForm(shelterId) {
   // Implement functionality to fill adoption form for the selected shelter
